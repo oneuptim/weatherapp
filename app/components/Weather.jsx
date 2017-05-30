@@ -8,8 +8,8 @@ var Weather = React.createClass({
     getInitialState: function () {
         return {
             isLoading: false,
-            location: 'Las Vegas',
-            temp: '99'
+            location: 'San Jose',
+            temp: '82'
         }
     },
     handleSearch: function (location) {
