@@ -21,11 +21,11 @@ var Weather = React.createClass({
             errorMessage: undefined
         });
 
-        openWeatherMap.getTemp(location).then(function (temp) {
+        openWeatherMap.getTemp(location).then(function (data) {
             that.setState({
                 location: location,
-                temp: temp,
-                country: country,
+                temp: data.main.temp,
+                country: data.sys.country,
                 isLoading: false
             });
         }, function (e) {
