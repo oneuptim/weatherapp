@@ -11,7 +11,6 @@ var Weather = React.createClass({
             location: 'San Jose',
             temp: '82',
             country: 'USA',
-        
         }
     },
     handleSearch: function (location) {
